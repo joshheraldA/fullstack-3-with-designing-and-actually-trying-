@@ -1,5 +1,4 @@
 const body = document.querySelector('.main-body')
-const btn = document.querySelector('#download-button')
 
 function checkFile(img_url) {
     return new Promise((resolve, reject) => {
@@ -54,4 +53,3 @@ async function getShoes() {
 }
 
 getShoes();
-console.log("HELLO")

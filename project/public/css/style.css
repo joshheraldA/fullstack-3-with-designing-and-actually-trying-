@@ -14,8 +14,10 @@
 #logo-text {
     color: rgb(23, 23, 23);
     text-decoration: none;
-    font-size: 15px;
-    font-family: "Funnel Display"
+    font-size: 23px;
+    font-family: "Funnel Display";
+    margin-right: auto;
+
 }
 
 header {
@@ -32,6 +34,13 @@ header p {
     font-family: "Vina Sans";
     letter-spacing: 6px;
     font-size: 15px;
+    
+}
+
+.header-right {
+    display: flex;
+    min-width: 54vw;
+    justify-content: space-between;
 }
 
 header ul {
@@ -64,7 +73,7 @@ header ul a {
     width: 280px;
     height: 200px;
     color: var(--primary-font-color);
-    box-shadow: 1px 1px rgba(105, 105, 105, 0.378);
+    box-shadow: 0.5px 0.5px rgba(60, 60, 60, 0.315);
 }
 
 .main-body {
