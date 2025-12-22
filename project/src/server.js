@@ -4,7 +4,7 @@ const { join } = require("path")
 const app = express()
 const PORT = 8080
 
-const path = join(__dirname, "..", "public", "html")
+const path = join(__dirname, "..", "public")
 
 app.use(express.static(path));
 
