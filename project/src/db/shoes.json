@@ -1,0 +1,104 @@
+{
+    "shoes": [
+      {
+        "name": "Jordan 4 Retro Black Cat (2025)",
+        "market_price": "$266",
+        "image_url": "https://images.stockx.com/360/Air-Jordan-4-Retro-Black-Cat-2025/Images/Air-Jordan-4-Retro-Black-Cat-2025/Lv2/img01.jpg"
+      },
+      {
+        "name": "Jordan 11 Retro Gamma Blue (2025)",
+        "market_price": "$297",
+        "image_url": "https://images.stockx.com/360/Air-Jordan-11-Retro-Gamma-Blue-2025/Images/Air-Jordan-11-Retro-Gamma-Blue-2025/Lv2/img01.jpg"
+      },
+      {
+        "name": "ASICS Gel-1130 'Black Pure Silver'",
+        "market_price": "$125",
+        "image_url": "https://images.stockx.com/360/ASICS-Gel-1130-Black-Pure-Silver/Images/ASICS-Gel-1130-Black-Pure-Silver/Lv2/img01.jpg"
+      },
+      {
+        "name": "Nike Ja 3 'Sound Check'",
+        "market_price": "$135",
+        "image_url": "https://images.stockx.com/images/Nike-Ja-3-Sound-Check-Product.jpg"
+      },
+      {
+        "name": "Nike Dunk Low Retro 'White Black Panda'",
+        "market_price": "$115",
+        "image_url": "https://images.stockx.com/360/Nike-Dunk-Low-Retro-White-Black-2021/Images/Nike-Dunk-Low-Retro-White-Black-2021/Lv2/img01.jpg"
+      },
+      {
+        "name": "Jordan 4 Retro 'White Cement' (2025)",
+        "market_price": "$215",
+        "image_url": "https://images.stockx.com/360/Air-Jordan-4-Retro-White-Cement-2025/Images/Air-Jordan-4-Retro-White-Cement-2025/Lv2/img01.jpg"
+      },
+      {
+        "name": "Jordan 4 Retro 'Cave Stone'",
+        "market_price": "$225",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-4-Retro-Cave-Stone-Product.jpg"
+      },
+      {
+        "name": "Nike Air Force 1 Low '07 'White'",
+        "market_price": "$115",
+        "image_url": "https://images.stockx.com/360/Nike-Air-Force-1-Low-White-07/Images/Nike-Air-Force-1-Low-White-07/Lv2/img01.jpg"
+      },
+      {
+        "name": "Jordan 1 Retro Low OG 'Zion Williamson Voodoo Alternate'",
+        "market_price": "$175",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-Zion-Williamson-Voodoo-Alternate-Product.jpg"
+      },
+      {
+        "name": "Jordan 1 Retro Low OG 'Chicago' (2025)",
+        "market_price": "$160",
+        "image_url": "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Images/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Lv2/img01.jpg"
+      },
+      {
+        "name": "Jordan 1 Retro High OG 'Shattered Backboard' (2025)",
+        "market_price": "$250",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Shattered-Backboard-2025-Product.jpg"
+      },
+      {
+        "name": "Jordan 3 Retro 'Pure Money' (2025)",
+        "market_price": "$210",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-3-Retro-Pure-Money-2025-Product.jpg"
+      },
+      {
+        "name": "Nike Air Foamposite Pro 'Pine Green' (2025)",
+        "market_price": "$230",
+        "image_url": "https://images.stockx.com/360/Nike-Air-Foamposite-Pro-Pine-Green-2025/Images/Nike-Air-Foamposite-Pro-Pine-Green-2025/Lv2/img01.jpg"
+      },
+      {
+        "name": "ASICS Gel-Kayano 14 'White Graphite Grey'",
+        "market_price": "$185",
+        "image_url": "https://images.stockx.com/360/ASICS-Gel-Kayano-14-White-Graphite-Grey/Images/ASICS-Gel-Kayano-14-White-Graphite-Grey/Lv2/img01.jpg"
+      },
+      {
+        "name": "New Balance 9060 'Sea Salt Cherry Blossom'",
+        "market_price": "$160",
+        "image_url": "https://images.stockx.com/360/New-Balance-9060-Sea-Salt-Cherry-Blossom/Images/New-Balance-9060-Sea-Salt-Cherry-Blossom/Lv2/img01.jpg"
+      },
+      {
+        "name": "Nike SB Dunk Low 'Nardwuar'",
+        "market_price": "$285",
+        "image_url": "https://images.stockx.com/360/Nike-SB-Dunk-Low-Nardwuar/Images/Nike-SB-Dunk-Low-Nardwuar/Lv2/img01.jpg"
+      },
+      {
+        "name": "Adidas Yeezy Foam RNR 'Onyx'",
+        "market_price": "$140",
+        "image_url": "https://images.stockx.com/360/adidas-Yeezy-Foam-RNNR-Onyx/Images/adidas-Yeezy-Foam-RNNR-Onyx/Lv2/img01.jpg"
+      },
+      {
+        "name": "Nike Kobe 5 Protro 'Year of the Mamba' (Eggplant)",
+        "market_price": "$315",
+        "image_url": "https://images.stockx.com/images/Nike-Kobe-5-Protro-Year-of-the-Mamba-Eggplant-Product.jpg"
+      },
+      {
+        "name": "Jordan 5 Retro 'Fire Red Black Tongue' (2025)",
+        "market_price": "$215",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-5-Retro-Fire-Red-Black-Tongue-2025-Product.jpg"
+      },
+      {
+        "name": "Jordan 12 Retro 'Taxi' (2025)",
+        "market_price": "$210",
+        "image_url": "https://images.stockx.com/images/Air-Jordan-12-Retro-Taxi-2025-Product.jpg"
+      }
+    ]
+  }
