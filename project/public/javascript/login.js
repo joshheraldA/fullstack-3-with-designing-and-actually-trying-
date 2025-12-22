@@ -1,4 +1,27 @@
-const body = document.querySelector('.body')
+const body = document.querySelector('.main-body')
+const btn = document.querySelector('#download-button')
+
+function checkFile(img_url) {
+    return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(img_url)
+        image.onerror = () => reject('project/public/asset/error.jpg')
+        image.src = img_url
+    })
+}
+
+async function checkFileAndAppend(img_url) {
+    try {
+        const image = await checkFile(img_url)
+
+        return image
+
+    } catch(err) {
+        return `../asset/error.jpg`
+    }
+
+}
+
 
 async function getShoes() {
     try {
@@ -10,25 +33,25 @@ async function getShoes() {
         const dataResponse= await response.json()
         const { data } = dataResponse;
 
-        console.log(data)
-        const contents = data.map(shoe => {
+        const contents = data.map(async(shoe) => {
+            const image = await checkFileAndAppend(shoe['image_url'])
             return `
-            <a href=#>    
+            <a href=>    
                 <div class="card">
-                    <img src=${shoe['image_url']}></img>
+                    <img src=${image} alt="a picture of ${shoe['name']}"></img>
                     <p>${shoe['name']}</p>
                     <p>${shoe['market_price']}</p>    
                 </div>        
             </a>
                 `
-        }).join('')
-
-        body.innerHTML = contents;
+        })
+        const htmlArray = await Promise.all(contents)
+        body.innerHTML = htmlArray.join('');
 
     } catch (err) {
         throw new Error(`there was an error: ${err}`)
     }
-
 }
 
-getShoes()
+getShoes();
+console.log("HELLO")

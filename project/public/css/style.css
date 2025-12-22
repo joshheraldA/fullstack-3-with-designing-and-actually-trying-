@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+:root {
+    --secondary-color: rgb(253, 253, 253);
+    --primary-font-color: rgb(51, 40, 40); 
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,7 +20,7 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(253, 253, 253);
     box-sizing: border-box;
     padding: 30px 5%;
@@ -45,3 +51,32 @@ header ul a {
     font-size: 12px;
 }
 
+.main-body img {
+    width: 100%;        /* Use the full width of the card's inner space */
+    height: 120px;      /* Force every image to be the same height */
+    object-fit: contain; /* This prevents the shoe from looking 'squished' */
+    margin-bottom: 10px;
+}
+
+.main-body a {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    width: 280px;
+    height: 200px;
+    color: var(--primary-font-color);
+    box-shadow: 1px 1px rgba(105, 105, 105, 0.378);
+}
+
+.main-body {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: space-evenly;;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
