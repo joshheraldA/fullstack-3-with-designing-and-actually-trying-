@@ -12,7 +12,6 @@ function checkFile(img_url) {
 async function checkFileAndAppend(img_url) {
     try {
         const image = await checkFile(img_url)
-
         return image
 
     } catch(err) {
@@ -34,12 +33,13 @@ async function getShoes() {
 
         const contents = data.map(async(shoe) => {
             const image = await checkFileAndAppend(shoe['image_url'])
+            console.log("WhAT HAPPENING")
             return `
             <a href=>    
                 <div class="card">
                     <img src=${image} alt="a picture of ${shoe['name']}"></img>
                     <p>${shoe['name']}</p>
-                    <p>${shoe['market_price']}</p>    
+                    <p id="price">${shoe['market_price']}</p>    
                 </div>        
             </a>
                 `
