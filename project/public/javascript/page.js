@@ -36,14 +36,19 @@ async function fetchShoeData() {
 }
 
 
-console.log('supPOSE TO HAPPEN FIRST')
+
+
+
 function rendering(img, data) {
     console.log(img)
     document.getElementById('picture-card').src = img
 
     const placeholder = document.querySelector(".placeholder");
     placeholder.innerHTML = `
-        <p id="title-shoe">${data['name']}</p>
+        <div class="header-container">
+            <img src="../asset/profile.jpg" class="profile-picture"></img>
+            <p id="title-shoe">${data['name']}</p>
+        </div>
         <hr>
 
         <div class="details">
