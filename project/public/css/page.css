@@ -1,0 +1,173 @@
+/* This one line replaces all three of your previous imports */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.result-card {
+    box-sizing: border-box;
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 6vh;
+    height: 80vh;
+    justify-content: center;
+}
+
+
+#picture-card {
+    width: 95%;
+    height: 50vh;
+    margin-top: 120px;
+    box-shadow: 1px 1px 4px rgba(57, 57, 57, 0.153);
+    
+}
+
+#picture-card img {
+    
+    position:absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+#logo-text {
+    color: rgb(23, 23, 23);
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Funnel Display";
+    margin-right: auto;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(253, 253, 253);
+    box-sizing: border-box;
+    padding: 30px 5%;
+    align-content: center;
+    z-index: 2;
+    box-shadow: 0.5px 0.5px 10px rgb(23, 23, 23, 0.153);
+    ;
+}
+
+header p {
+    color: rgb(23, 23, 23);
+    font-family: "Vina Sans";
+    letter-spacing: 6px;
+    font-size: 15px;
+    
+}
+
+.header-right {
+    display: flex;
+    min-width: 54vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header ul a {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    font-family: "Funnel Display";
+    color: rgb(23, 23, 23);
+    font-size: 12px;
+    height: 18px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 32px;
+    align-self: flex-end;
+    height: 37px;
+    width: 37px;
+    border-radius: 5px;
+    padding-top: 8px;
+}
+
+.body-part {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+
+
+}
+
+.placeholder {
+    margin-top: 170px;
+    width: 600px;
+    box-sizing: border-box;
+
+}
+
+.placeholder #title-shoe {
+    letter-spacing: 4px;
+    font-size: 1.3rem;
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: 300; 
+    margin-left: 10px;
+    font-style: normal;
+
+}
+
+.placeholder hr {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.placeholder .details {
+    position: relative;
+    padding: 30px;
+    line-height: 30px;;
+    font-family: "Funnel Display";
+    font-size: 13px;
+    line-height: 40px;   
+    height: 50%;
+}
+
+
+
+@media screen and (max-width: 1260px) {
+    .placeholder {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+
+    
+    hr {
+        width: 98%;
+    }
+
+    img {
+        height: auto;
+    }
+    
+    #title-shoe {
+        width: 80vw;
+        font-size: 0.3rem;
+    }
+
+}
+
+.details div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}

@@ -1,24 +1,6 @@
 const body = document.querySelector('.main-body')
 
-function checkFile(img_url) {
-    return new Promise((resolve, reject) => {
-        const image = new Image();
-        image.onload = () => resolve(img_url)
-        image.onerror = () => reject('project/public/asset/error.jpg')
-        image.src = img_url
-    })
-}
-
-async function checkFileAndAppend(img_url) {
-    try {
-        const image = await checkFile(img_url)
-        return image
-
-    } catch(err) {
-        return `../asset/error.jpg`
-    }
-
-}
+import { checkFileAndAppend } from "./checkFile.js"
 
 
 async function getShoes() {
@@ -30,12 +12,11 @@ async function getShoes() {
 
         const dataResponse= await response.json()
         const { data } = dataResponse;
-
+    
         const contents = data.map(async(shoe) => {
             const image = await checkFileAndAppend(shoe['image_url'])
-            console.log("WhAT HAPPENING")
             return `
-            <a href=>    
+            <a href="./page.html?id=${shoe['id']}">    
                 <div class="card">
                     <img src=${image} alt="a picture of ${shoe['name']}"></img>
                     <p>${shoe['name']}</p>
@@ -53,3 +34,4 @@ async function getShoes() {
 }
 
 getShoes();
+
