@@ -7,4 +7,18 @@ const getShoes = (req, res) => {
     })
 }
 
-module.exports = getShoes;
+const filterShoes = (req, res) => {
+    const { brand } = req.params
+
+    const shoeBrand = shoes.filter(shoe =>  shoe['brand'] === brand)
+
+    res.status(200).send({
+        success: true,
+        data: shoeBrand
+    })
+}
+
+module.exports = { 
+    getShoes,
+    filterShoes
+}
