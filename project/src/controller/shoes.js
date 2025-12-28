@@ -11,8 +11,7 @@ const filterShoes = (req, res) => {
     const { brand } = req.params
 
     const shoeBrand = shoes.filter(shoe =>  shoe['brand'] === brand)
-
-    res.status(200).send({
+    res.status(202).send({
         success: true,
         data: shoeBrand
     })

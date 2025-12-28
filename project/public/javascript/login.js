@@ -3,6 +3,7 @@ const body = document.querySelector('.main-body')
 const COLORS = ['355070', '6d597a', 'b56576', 'e56b6f', 'eaac8b']
 
 import { checkFileAndAppend } from "./checkFile.js"
+import { filterFunction } from "./filter.js"
 
 
 async function getShoes() {
@@ -37,6 +38,8 @@ async function getShoes() {
 
 async function getBrand() {
     try {
+
+        // fetches the data
         const response = await fetch('/brand')
         if(!response.ok) {
             console.err(`There was an error with a status code: ${response.status}`)
@@ -44,15 +47,16 @@ async function getBrand() {
 
         const jsonData = await response.json()
         const { data } = jsonData
+        // sets the button used for filtering alongside their individual ids'
         let count = 1;
-
         const contents = data.map(brand => {
-            return `<button class="brand-name" id=id${count++} onclick="alert('hello')">
+            return `<button class="brand-name" id="id${count++}" >
                 ${brand}
             </button>
             `
         }).join("")
 
+        // sets up the wrapper
         document.querySelector(".wrapper").innerHTML = contents
         count--;
         
@@ -62,6 +66,11 @@ async function getBrand() {
             const delayValue = (30 / count) * (count - i) * -1;
 
             button.style.animationDelay = `${delayValue}s`;  
+
+            const brandName = button.innerText.trim();           
+            button.addEventListener('click', () => {
+                filterFunction(brandName)
+            })
         }
 
 
@@ -72,4 +81,5 @@ async function getBrand() {
 
 getBrand();
 getShoes();
+
 
