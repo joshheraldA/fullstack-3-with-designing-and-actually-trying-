@@ -35,10 +35,6 @@ async function fetchShoeData() {
 
 }
 
-
-
-
-
 function rendering(img, data) {
     console.log(img)
     document.getElementById('picture-card').src = img
@@ -66,8 +62,8 @@ function rendering(img, data) {
             </div>
 
         </div>
+        
     `
-
 }
 
 fetchShoeData()

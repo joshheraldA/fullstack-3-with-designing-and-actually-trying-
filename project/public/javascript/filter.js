@@ -1,3 +1,4 @@
-export async function filterFunction() {
+
+export async function filterFunction(brand) {
     
 }

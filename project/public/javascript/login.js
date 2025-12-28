@@ -1,5 +1,7 @@
 const body = document.querySelector('.main-body')
 
+const COLORS = ['355070', '6d597a', 'b56576', 'e56b6f', 'eaac8b']
+
 import { checkFileAndAppend } from "./checkFile.js"
 
 
@@ -33,5 +35,41 @@ async function getShoes() {
     }
 }
 
+async function getBrand() {
+    try {
+        const response = await fetch('/brand')
+        if(!response.ok) {
+            console.err(`There was an error with a status code: ${response.status}`)
+        }
+
+        const jsonData = await response.json()
+        const { data } = jsonData
+        let count = 1;
+
+        const contents = data.map(brand => {
+            return `<button class="brand-name" id=id${count++} onclick="alert('hello')">
+                ${brand}
+            </button>
+            `
+        }).join("")
+
+        document.querySelector(".wrapper").innerHTML = contents
+        count--;
+        
+        for(let i = 1; i < count + 1; i++) {
+            const button = document.querySelector(`#id${i}`)
+            button.style.backgroundColor = `#${COLORS[(i) % 5]}`
+            const delayValue = (30 / count) * (count - i) * -1;
+
+            button.style.animationDelay = `${delayValue}s`;  
+        }
+
+
+    } catch(err) {
+        throw new Error(err)
+    }
+}
+
+getBrand();
 getShoes();
 
